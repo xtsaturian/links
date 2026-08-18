@@ -30,13 +30,31 @@
     padding: 48px 16px;
   }
 
-  .card{
-    width: 100%;
-    max-width: 420px;
-    border: var(--border-w) solid var(--border);
-    border-radius: 12px;
-    padding: 32px 24px 28px;
-    position: relative;
+  .card {
+    /* Зменшуємо внутрішні відступи (було: 32px 24px 28px) */
+    padding: 20px 20px 18px;
+  }
+
+  .avatar {
+    /* Зменшуємо розмір та відступ аватарки (було: 84px та margin: 8px auto 20px) */
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 12px;
+  }
+
+  .links-label {
+    /* Зменшуємо відступ перед списком посилань (було: 22px) */
+    margin: 0 0 12px;
+  }
+
+  .link-list {
+    /* Зменшуємо відстань між кнопками (було: 14px) */
+    gap: 8px;
+  }
+
+  .link-btn {
+    /* Зменшуємо висоту самих кнопок (було: 16px 18px) */
+    padding: 10px 14px;
   }
 
   .menu-dots{

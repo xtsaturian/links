@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>@taksahovori</title>
+<style>
+  :root{
+    --bg: #0d0d0d;
+    --card-bg: #0d0d0d;
+    --border: #f5f5f0;
+    --text: #f5f5f0;
+    --muted: #8a8a85;
+    --accent: #f4d93e;
+    --accent-text: #0d0d0d;
+    --radius: 4px;
+    --border-w: 2px;
+  }
+
+  * { box-sizing: border-box; }
+
+  body{
+    margin: 0;
+    min-height: 100vh;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'JetBrains Mono', 'IBM Plex Mono', 'Courier New', monospace;
+    display: flex;
+    justify-content: center;
+    padding: 48px 16px;
+  }
+
+  .card{
+    width: 100%;
+    max-width: 420px;
+    border: var(--border-w) solid var(--border);
+    border-radius: 12px;
+    padding: 32px 24px 28px;
+    position: relative;
+  }
+
+  .menu-dots{
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    color: var(--muted);
+    font-size: 20px;
+    letter-spacing: 2px;
+    cursor: default;
+  }
+
+  .avatar{
+    width: 84px;
+    height: 84px;
+    margin: 8px auto 20px;
+    background: #e9e9e4 url('avatar.png') center / cover no-repeat;
+    border-radius: 6px;
+    display: block;
+  }
+
+  .handle{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 6px;
+  }
+
+  .links-label{
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: var(--muted);
+    margin: 0 0 22px;
+  }
+
+  .link-list{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .link-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 16px 18px;
+    border: var(--border-w) solid var(--border);
+    border-radius: var(--radius);
+    background: transparent;
+    color: var(--text);
+    text-decoration: none;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 0.08s ease, opacity 0.15s ease;
+  }
+
+  .link-btn:hover{
+    opacity: 0.85;
+  }
+
+  .link-btn:active{
+    transform: translateY(1px);
+  }
+
+  .link-btn.primary{
+    background: var(--accent);
+    color: var(--accent-text);
+    border-color: var(--accent);
+  }
+
+  .arrow{
+    font-size: 14px;
+  }
+
+
+</style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="menu-dots">⋯</div>
+
+    <div class="avatar"></div>
+
+    <p class="handle">@taksahovori</p>
+    <p class="links-label">LINKS ↓</p>
+
+    <div class="link-list">
+
+      <a href="https://www.instagram.com/myztatier/" class="link-btn" target="_blank" rel="noopener">
+        INSTAGRAM <span class="arrow">→</span>
+      </a>
+
+      <a href="https://t.me/slovatskij" class="link-btn" target="_blank" rel="noopener">
+        TELEGRAM <span class="arrow">→</span>
+      </a>
+
+      <a href="https://www.forendors.cz/taksahovori68" class="link-btn primary" target="_blank" rel="noopener">
+        Slovak courses (RU) <span class="arrow">→</span>
+      </a>
+
+      <a href="https://taksahovori.blacksea.in.ua/l/pjnt?layout=profile" class="link-btn primary" target="_blank" rel="noopener">
+        Slovak courses (UA) <span class="arrow">→</span>
+      </a>
+
+    </div>
+  </div>
+
+</body>
+</html>
